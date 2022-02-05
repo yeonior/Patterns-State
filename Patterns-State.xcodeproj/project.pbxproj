@@ -13,6 +13,9 @@
 		A28853A327AE696700F9A5D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28853A127AE696700F9A5D1 /* Main.storyboard */; };
 		A28853A527AE696700F9A5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28853A427AE696700F9A5D1 /* Assets.xcassets */; };
 		A28853A827AE696700F9A5D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28853A627AE696700F9A5D1 /* LaunchScreen.storyboard */; };
+		A28853B027AE69F700F9A5D1 /* LocationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28853AF27AE69F700F9A5D1 /* LocationTracker.swift */; };
+		A28853B227AE6B0D00F9A5D1 /* EnabledTrackingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28853B127AE6B0D00F9A5D1 /* EnabledTrackingState.swift */; };
+		A28853B427AE6D7F00F9A5D1 /* DisabledTrackingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28853B327AE6D7F00F9A5D1 /* DisabledTrackingState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		A28853A427AE696700F9A5D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A28853A727AE696700F9A5D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A28853A927AE696700F9A5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A28853AF27AE69F700F9A5D1 /* LocationTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTracker.swift; sourceTree = "<group>"; };
+		A28853B127AE6B0D00F9A5D1 /* EnabledTrackingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnabledTrackingState.swift; sourceTree = "<group>"; };
+		A28853B327AE6D7F00F9A5D1 /* DisabledTrackingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisabledTrackingState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			children = (
 				A288539B27AE696700F9A5D1 /* AppDelegate.swift */,
 				A288539D27AE696700F9A5D1 /* SceneDelegate.swift */,
+				A28853AF27AE69F700F9A5D1 /* LocationTracker.swift */,
+				A28853B127AE6B0D00F9A5D1 /* EnabledTrackingState.swift */,
+				A28853B327AE6D7F00F9A5D1 /* DisabledTrackingState.swift */,
 				A288539F27AE696700F9A5D1 /* ViewController.swift */,
 				A28853A127AE696700F9A5D1 /* Main.storyboard */,
 				A28853A427AE696700F9A5D1 /* Assets.xcassets */,
@@ -138,7 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A28853B427AE6D7F00F9A5D1 /* DisabledTrackingState.swift in Sources */,
+				A28853B227AE6B0D00F9A5D1 /* EnabledTrackingState.swift in Sources */,
 				A28853A027AE696700F9A5D1 /* ViewController.swift in Sources */,
+				A28853B027AE69F700F9A5D1 /* LocationTracker.swift in Sources */,
 				A288539C27AE696700F9A5D1 /* AppDelegate.swift in Sources */,
 				A288539E27AE696700F9A5D1 /* SceneDelegate.swift in Sources */,
 			);
