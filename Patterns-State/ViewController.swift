@@ -8,12 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let locationTracker = LocationTracker()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        locationTracker.startTracking()
+        locationTracker.pauseTracking(for: 5)
+        locationTracker.stopTracking()
     }
-
-
 }
 

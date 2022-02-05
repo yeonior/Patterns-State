@@ -15,7 +15,7 @@ protocol TrackingState {
 
 final class LocationTracker {
     
-    private lazy var trackingState: TrackingState? = nil
+    private lazy var trackingState: TrackingState? = DisabledTrackingState(tracker: self)
     
     func startTracking() {
         trackingState?.startTracking()

@@ -25,10 +25,11 @@ final class DisabledTrackingState: TrackingState {
     }
     
     func pauseTracking(for time: TimeInterval) {
-        print("DisabledTrackingState: Paused for \(time) seconds")
-        
-        for i in 0...Int(time) {
-            print("DisabledTrackingState: \(i) second(s) remaining")
+        print("DisabledTrackingState: Paused for \(Int(time)) seconds")
+        var second = Int(time)
+        for _ in 0...Int(time) {
+            print("DisabledTrackingState: \(second) second(s) remaining")
+            second -= 1
         }
         print("DisabledTrackingState: Changed state to 'enabled'")
         tracker?.update(state: EnabledTrackingState(tracker: tracker!))
